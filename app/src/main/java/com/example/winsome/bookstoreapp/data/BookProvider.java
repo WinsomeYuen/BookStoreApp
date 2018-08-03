@@ -211,7 +211,7 @@ public class BookProvider extends ContentProvider {
 
         if (values.containsKey(BookEntry.COLUMN_SUPPLIER_NUMBER)) {
             String supplierNumber = values.getAsString(BookEntry.COLUMN_SUPPLIER_NUMBER);
-            if (supplierNumber != null) {
+            if (supplierNumber == null) {
                 throw new IllegalArgumentException("Book requires valid supplier number");
             }
         }

@@ -22,7 +22,6 @@ public final class BookStoreContract {
 
         public final static String TABLE_NAME="bookstore";
 
-        public final static String _ID = BaseColumns._ID;
         public final static String COLUMN_PRODUCT_NAME ="productname";
         public final static String COLUMN_PRODUCT_PRICE = "price";
         public final static String COLUMN_PRODUCT_QUANTITY = "quantity";

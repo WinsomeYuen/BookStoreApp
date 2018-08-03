@@ -186,7 +186,9 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     public void orderMore() {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:"+mSupplierNumberEditText.getText().toString().trim()));
-        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);  //where intent is your intent
+        }
     }
 
     private boolean saveBook() {
@@ -262,7 +264,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         } else {
             // If the quantity is not provided by the user, don't try to parse the string into an
             // integer value. Use 0 by default.
-            values.put(BookEntry.COLUMN_PRODUCT_QUANTITY, supplierNumberString);
+            values.put(BookEntry.COLUMN_SUPPLIER_NUMBER, supplierNumberString);
         }
 
 

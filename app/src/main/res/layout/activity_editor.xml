@@ -60,7 +60,7 @@
             <EditText
                 android:id="@+id/edit_book_quantity"
                 android:hint="@string/hint_product_quantity"
-                android:inputType="textCapWords"
+                android:inputType="number"
                 style="@style/EditorFieldStyle" />
 
             <!-- Image section -->
@@ -132,11 +132,11 @@
                 android:inputType="textCapWords"
                 style="@style/EditorFieldStyle" />
 
-            <!-- Name field -->
+            <!-- Number field -->
             <EditText
                 android:id="@+id/edit_supplier_number"
                 android:hint="@string/hint_supplier_number"
-                android:inputType="textCapWords"
+                android:inputType="phone"
                 style="@style/EditorFieldStyle" />
 
         </LinearLayout>
