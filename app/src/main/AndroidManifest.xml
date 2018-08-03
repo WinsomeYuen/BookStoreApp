@@ -4,16 +4,20 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_book"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainAcitivity"
+            android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,14 +26,18 @@
         </activity>
         <activity
             android:name=".EditorActivity"
-            android:label="@string/editor_activity_title_new_pet"
+            android:label="@string/editor_activity_title_new_book"
             android:theme="@style/EditorTheme"
-            android:parentActivityName=".MainAcitivity" >
+            android:parentActivityName=".MainActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainAcitivity" />
+                android:value=".MainActivity" />
         </activity>
+        <provider
+            android:name=".data.BookProvider"
+            android:authorities="com.example.winsome.bookstoreapp"
+            android:exported="false" />
     </application>
 
 </manifest>

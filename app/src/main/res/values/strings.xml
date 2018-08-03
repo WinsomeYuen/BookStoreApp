@@ -2,20 +2,32 @@
     <!-- Name for the application [CHAR LIMIT=12] -->
     <string name="app_name">BookStore</string>
 
-    <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
+    <!-- Label for overflow menu option that inserts fake book data into the app [CHAR LIMIT=20] -->
     <string name="action_insert_dummy_data">Insert Dummy Data</string>
 
-    <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
+    <!-- Label for overflow menu option that deletes all book data in the app [CHAR LIMIT=20] -->
     <string name="action_delete_all_entries">Delete All Books</string>
 
-    <!-- Title for the activity to add a new pet [CHAR LIMIT=20] -->
-    <string name="editor_activity_title_new_pet">Add a Book</string>
+    <!-- Title for the activity to add a new book [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_book">Add a Book</string>
 
-    <!-- Label for editor menu option to save pet and leave editor [CHAR LIMIT=20] -->
+    <!-- Title for the activity to edit a new book [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_book">Edit Book</string>
+
+    <!-- Title for the activity to edit a new book [CHAR LIMIT=20] -->
+    <string name="editor_update_book_failed">Error with updating book</string>
+
+    <!-- Title for the activity to edit a new book [CHAR LIMIT=20] -->
+    <string name="editor_update_book_successful">Book Updated</string>
+
+    <!-- Label for editor menu option to save book and leave editor [CHAR LIMIT=20] -->
     <string name="action_save">Save</string>
 
-    <!-- Label for editor overflow menu option that deletes the current pet [CHAR LIMIT=20] -->
+    <!-- Label for editor overflow menu option that deletes the current book [CHAR LIMIT=20] -->
     <string name="action_delete">Delete</string>
+
+    !-- Label for editor overflow menu option that orders the current book [CHAR LIMIT=20] -->
+    <string name="action_order">Order</string>
 
     <!-- Label for book category of attributes in the editor [CHAR LIMIT=30] -->
     <string name="category_product">Book</string>
@@ -29,15 +41,122 @@
     <!-- Text hint for price field in the editor [CHAR LIMIT=30] -->
     <string name="hint_product_price">Price</string>
 
-    <!-- Units for price of the pet (pound) [CHAR LIMIT=5] -->
+    <!-- Units for price of the book (pound) [CHAR LIMIT=5] -->
     <string name="unit_product_price">£</string>
 
     <!-- Text hint for quantity field in the editor [CHAR LIMIT=30] -->
     <string name="hint_product_quantity">Quantity</string>
+
+    <!-- Label for the product's photo -->
+    <string name="product_photo">Photo</string>
 
     <!-- Text hint for quantity field in the editor [CHAR LIMIT=30] -->
     <string name="hint_supplier_name">Name</string>
 
     <!-- Text hint for quantity field in the editor [CHAR LIMIT=30] -->
     <string name="hint_supplier_number">Number</string>
+
+    <!-- Label hint for the add photo section. Visible if product is editing -->
+    <string name="edit_photo_hint_text">Tap to change a photo</string>
+
+    <!-- Type of files which can be selected (Add photo) -->
+    <string name="intent_type">image/*</string>
+
+    <!-- Label hint for the add photo section. Visible if new product -->
+    <string name="select_image">Select image</string>
+
+    <!-- Toast message in editor when new book has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_book_successful">Book saved</string>
+
+    <!-- Toast message in editor when new book has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_book_failed">Error with saving book</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a book [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a book</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current pet [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Toast message in editor when current pet was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_successful">Book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_failed">Error with deleting book</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current book [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this Book?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current book [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current book [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Label for the book's publisher if the publisher is unknown [CHAR LIMIT=20] -->
+    <string name="unknown_publisher">Unknown publisher</string>
+
+    <!-- Label for stock -->
+    <string name="in_stock">In stock:</string>
+
+    <!-- Label for stock -->
+    <string name="pound_currency_sign">£</string>
+
+    <!-- Example: name of item -->
+    <string name="example_name_of_item">Curious George</string>
+
+    <!-- Example: name of supplier -->
+    <string name="example_name_of_supplier">Penguin Books</string>
+
+    <!-- Example: price of item -->
+    <string name="example_price">8.99</string>
+
+    <!-- Example: quantity of item -->
+    <string name="example_quantity">9</string>
+
+    <!-- Example: supplier number -->
+    <string name="example_supplier_number">07346925676</string>
+
+    <string name="toast_out_of_stock_msg">Book is out of stock!</string>
+
+    <!-- Toast message: validation of product quantity -->
+    <string name="error_msg_stock_update">Issue with upload value of quantity</string>
+
+    <!-- Toast message about sold item -->
+    <string name="buy_msg_confirm">Book has been sold</string>
+
+    <!-- Toast message: validation of missing book in stock -->
+    <string name="no_product_in_stock">No available book in stock</string>
+
+    <!-- Toast message: validation of book name field -->
+    <string name="validation_msg_book_name">Book name is required</string>
+
+    <!-- Toast message: validation of book quantity -->
+    <string name="validation_msg_book_quantity">Quantity is required</string>
+
+    <!-- Toast message: validation of book price -->
+    <string name="validation_msg_book_price">Price is required</string>
+
+    <!-- Toast message: validation of book image -->
+    <string name="validation_msg_book_image">Photo of book is required</string>
+
+    <!-- Toast message: validation of supplir name field -->
+    <string name="validation_msg_supplier_name">Supplier name is required</string>
+
+    <!-- Toast message: validation of supplier number field -->
+    <string name="validation_msg_supplier_number">Supplier number is required</string>
+
+    <string name="edit_book">Edit Book Details</string>
+
+    <string name="add_book">Add Book</string>
+
+    <string name="minus_book">Minus Book</string>
 </resources>
